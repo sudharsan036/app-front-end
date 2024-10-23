@@ -11,7 +11,7 @@ function getQueryParams() {
   async function fetchMovieDetails(movieId) {
     try {
       const response = await fetch(
-        `https://learn-with-guvi-book-my-show-backend.onrender.com/movie/${movieId}`
+        `https://learn-with-guvi-book-my-show-backend.onrender.com/movies/${movieId}`
       );
       const movie = await response.json();
   
@@ -119,7 +119,7 @@ function getQueryParams() {
   
     try {
       const response = await fetch(
-        "https://learn-with-guvi-book-my-show-backend.onrender.com/movie//movie/book-movie",
+        "https://learn-with-guvi-book-my-show-backend.onrender.com/movies//movie/book-movie",
         {
           method: "POST",
           headers: {
